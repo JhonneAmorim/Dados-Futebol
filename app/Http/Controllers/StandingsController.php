@@ -10,7 +10,7 @@ class StandingsController extends Controller
     public function index()
     {
         $apiKey = env('API_KEY');
-        $leagueId = 152;
+        $leagueId = 153;
 
         $response = Http::get("https://apiv3.apifootball.com/?action=get_standings&league_id=$leagueId&APIkey=$apiKey");
 
